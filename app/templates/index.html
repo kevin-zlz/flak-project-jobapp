@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jobapp</title>
+    <link rel="stylesheet" href="../static/main.css">
+</head>
+<body>
+    <h1>JOBAPP.COM</h1>
+    <!--超链接是GET模式-->
+
+    {% if session['id'] %}
+        <h1>欢迎{{session['id']}}</h1>
+        <a href="/user/logout">退出登录</a>
+    {% else %}
+        <a href="/user/login">登录</a>
+        <a href="/user/regist">注册</a>
+    {%endif%}
+</body>
+</html>

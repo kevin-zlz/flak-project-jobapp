@@ -1,0 +1,11 @@
+a{
+    width: 120px;
+    height: 40px;
+    display: inline-block;
+    text-align: center;
+    line-height:40px;
+    color: white;
+    background: black;
+    text-decoration: none;
+    cursor: default;
+}
